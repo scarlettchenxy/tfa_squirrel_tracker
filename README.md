@@ -4,7 +4,7 @@
 
 ## Introduction
 
-We created a *Squirrel Tracker* using Django to import, export data about and provide visualization for sightings of squirrels found in Central Park, New York.
+We created a **Squirrel Tracker** using *Django* to import, export associated data about and provide visualization for sightings of squirrels found in Central Park, New York.
 
 
 ## DataSet
