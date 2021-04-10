@@ -1,5 +1,5 @@
 # IEOR E4501 - Tools for Analytics  Project
-# Squirrel Tracker: a Django-based visualization for tracking squirrels
+# Squirrel Tracker: Django-based visualization for squirrel sightings
 
 
 ## Introduction
@@ -12,7 +12,7 @@ In this project,[*2018 Central Park Squirrel Census*](https://data.cityofnewyork
 This data set contains information pertaining to the number of sightings, including location coordinates, age, physical features and so on. 
 
 
-## Management Commands
+## Management Commands 
 Import: is a command that can import the data from the csv file, 2018 Central Park Squirrel Census. Specifically, the file path should be included after the management command in the command line. 
 
 ```sh
@@ -37,11 +37,11 @@ python manage.py export_squirrel_data /path/to/file.csv
 
 ### Edit a specific squirrel
 
-## Dependencies
+## Dependencies used in this project
 - [Django](https://www.djangoproject.com)
 - [Django-Leaflet](https://django-leaflet.readthedocs.io/en/latest/)  
 
-## Documentation
+## Project Prompt
 The official description for this project is in 
 [**Squirrel Tracker**](https://docs.google.com/document/d/1SPv3fMDKiemrR86rD-S9ecvI2npz3PljDzwCfxK2x5g/edit)
 
