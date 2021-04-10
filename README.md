@@ -1,10 +1,10 @@
-# IEOR E4501 Final Project
-# Squirrel Tracker: a visulization web-application for tracking squirrels
+# IEOR E4501 - Tools for Analytics  Project
+# Squirrel Tracker: a Django-based visualization for tracking squirrels
 
 
 ## Introduction
 
-We created a **Squirrel Tracker** using Django to import, export data about and provide visualization for sightings of squirrels found in Central Park, New York.
+We created a *Squirrel Tracker* using Django to import, export data about and provide visualization for sightings of squirrels found in Central Park, New York.
 
 
 ## DataSet
