@@ -6,7 +6,7 @@ from datetime import date
 import re
 
 class Command(BaseCommand):
-    help = 'Import the squirrel csv file into the database'
+    help = 'Import squirrel csv file into the database'
 
     def add_arguments(self, parser):
         parser.add_argument('path', type=str)
