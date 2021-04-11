@@ -2,12 +2,12 @@
 # Squirrel Tracker: Django-based visualization for squirrel sightings
 
 
-## Introduction
+## Project Introduction
 
 We created a **Squirrel Tracker** using *Django* to import, export associated data about and provide visualization for sightings of squirrels found in Central Park, New York.
 
 
-## DataSet
+## Data Source
 In this project,we have used the [*2018 Central Park Squirrel Census*](https://data.cityofnewyork.us/Environment/2018-Central-Park-Squirrel-Census-Squirrel-Data/vfnx-vebw) dataset published by [*Squirrel Census*](https://www.thesquirrelcensus.com/).This data set contains information pertaining to the number of sightings, including location coordinates, age, physical features and so on. 
 
 
