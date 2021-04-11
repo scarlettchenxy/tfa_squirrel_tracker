@@ -26,15 +26,15 @@ python manage.py export_squirrel_data /path/to/file.csv
 
 ## API
 
-### Map     
+## Map     
 
-### Sightings 
+## Sightings 
 
-### Stats of squirrels
+## Stats of squirrels
 
-### Add squirrels
+## Add squirrels
 
-### Edit a specific squirrel
+## Edit a specific squirrel
 
 ## Dependencies used in this project
 - [Django](https://www.djangoproject.com)
