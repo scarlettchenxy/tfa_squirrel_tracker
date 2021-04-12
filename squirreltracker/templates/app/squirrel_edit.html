@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+
+        <style>
+            .form-container {
+                display: flex;
+                flex-wrap: wrap;
+                width: 80vw;
+            }
+
+            .form-group {
+                display: flex;
+                flex-wrap: wrap;
+                margin: 20px 20px;
+                flex-direction: column;
+            }
+
+            label {
+                font-weight: bold;
+            }
+        </style>
+
+        <div class="col-4">
+            <form class="" action="{% url 'app:squirrels'  squirrel.uniquesquirrelid %}" method="POST">{% csrf_token %}
+                <div class="form-container">
+                    <div class="form-group row">
+                        <label>Latitude</label>
+                        <input type="text" class="form-control" name="Latitude" value="{{ squirrel.x }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Longitude</label>
+                        <input type="text" class="form-control" name="Longitude" value="{{ squirrel.y }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Unique Squirrel ID</label>
+                        <input type="text" class="form-control" name="uniquesquirrelid" value="{{ squirrel.uniquesquirrelid }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Shift</label>
+                        <input type="text" class="form-control" name="Shift" value="{{ squirrel.shift }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>date</label>
+                        <input type="text" class="form-control" name="Date" value="{{ squirrel.date }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Age</label>
+                        <input type="text" class="form-control" name="Age" value="{{ squirrel.age }}">
+                    </div>
+                    <button type="submit" style="height: 50% ;margin-top: 40px" class="btn btn-primary">submit</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <div class="col-4">
+
+    </div>
+</div>
+
+
+{% endblock %}
