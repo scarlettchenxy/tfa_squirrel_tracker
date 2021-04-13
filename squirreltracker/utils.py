@@ -1,9 +1,11 @@
 import csv
-from app.models import Squirrelinfo
 import os
-from squirrel_project.settings import BASE_DIR
-from matplotlib import pyplot as plt
 import uuid
+
+from matplotlib import pyplot as plt
+
+from .models import Squirrelinfo
+from project.settings import BASE_DIR
 
 
 def get_file_headers(filename):

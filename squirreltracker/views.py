@@ -1,8 +1,9 @@
 from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
 from django.core.paginator import Paginator
-from app.models import Squirrelinfo
-from app.utils import stas_png
+
+from .models import Squirrelinfo
+from .utils import stas_png
 
 
 def add(request):

@@ -1,5 +1,6 @@
 from django.core.management.base import BaseCommand
-from app.utils import write_export_data
+
+from ...utils import write_export_data
 
 
 class Command(BaseCommand):

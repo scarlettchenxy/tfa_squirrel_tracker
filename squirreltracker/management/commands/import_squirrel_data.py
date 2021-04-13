@@ -1,7 +1,11 @@
-from django.core.management.base import BaseCommand
-from app.utils import write_import_data
-from squirrel_project.settings import BASE_DIR
 import os
+
+from django.core.management.base import BaseCommand
+
+from ...utils import write_import_data
+from project.settings import BASE_DIR
+
+
 class Command(BaseCommand):
     help = 'import data to database'
 
