@@ -8,7 +8,7 @@ from .utils import stas_png
 
 def add(request):
     if request.method == 'GET':
-        return render(request, 'app/squirrel_add.html')
+        return render(request, 'tracker/squirrel_add.html')
     if request.method == 'POST':
         data = {}
         attrs = ['x', 'y', 'uniquesquirrelid', 'Shift', 'Date', 'Age', 'primaryfurcolor',
@@ -19,7 +19,7 @@ def add(request):
             data[attr.lower()] = request.POST[attr].strip()
         sighting = Squirrelinfo.objects.create(**data)
         sighting.save()
-        return redirect(reverse('app:squirrels_position'))
+        return redirect(reverse('tracker:squirrels_position'))
 
 def edit(request, unique_squirrel_id):
     squirrel = Squirrelinfo.objects.filter(uniquesquirrelid=unique_squirrel_id).first()
@@ -31,21 +31,21 @@ def edit(request, unique_squirrel_id):
         squirrel.save()
         squirrel = Squirrelinfo.objects.filter(uniquesquirrelid=unique_squirrel_id).first()
         messages.add_message(request,messages.SUCCESS,'update success')
-        return render(request, 'app/squirrel_edit.html', context={'squirrel': squirrel})
+        return render(request, 'tracker/squirrel_edit.html', context={'squirrel': squirrel})
     else:
 
-        return render(request, 'app/squirrel_edit.html', context={'squirrel': squirrel})
+        return render(request, 'tracker/squirrel_edit.html', context={'squirrel': squirrel})
 
 
 def squirrels_position(request):
     squirrels = Squirrelinfo.objects.all()
     paginator = Paginator(squirrels, 15)
     page_number = request.GET.get('page', 1)
-    return render(request, 'app/squirrel_position.html', context={'all_pages': paginator.get_page(page_number)})
+    return render(request, 'tracker/squirrel_position.html', context={'all_pages': paginator.get_page(page_number)})
 
 
 def index(request):
-    return render(request, 'app/index.html', context={'squirrels': Squirrelinfo.objects.all()})
+    return render(request, 'tracker/index.html', context={'squirrels': Squirrelinfo.objects.all()})
 
 
 def stats(request):
@@ -76,7 +76,7 @@ def stats(request):
         else:
             locationdata[squirrel['location']] = 0
 
-    return render(request, 'app/squirrel_stats.html', context={
+    return render(request, 'tracker/squirrel_stats.html', context={
         'shift': stas_png(shiftdata),
         'running': stas_png(runningdata),
         'location': stas_png(locationdata),

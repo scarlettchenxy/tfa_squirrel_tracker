@@ -26,7 +26,7 @@
         </style>
 
         <div class="col-4">
-            <form class="" action="{% url 'app:squirrels'  squirrel.uniquesquirrelid %}" method="POST">{% csrf_token %}
+            <form class="" action="{% url 'tracker:squirrels'  squirrel.uniquesquirrelid %}" method="POST">{% csrf_token %}
                 <div class="form-container">
                     <div class="form-group row">
                         <label>Latitude</label>

@@ -34,7 +34,7 @@
                             <td>{{ i.shift }}</td>
                             <td>{{ i.date }}</td>
                             <td>{{ i.age }}</td>
-                            <td><a class="btn btn-default" href="{% url 'app:squirrels' i.uniquesquirrelid %}"> edit</a></td>
+                            <td><a class="btn btn-default" href="{% url 'tracker:squirrels' i.uniquesquirrelid %}"> edit</a></td>
                         </tr>
                     {% endfor %}
                     </tbody>

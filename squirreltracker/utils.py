@@ -74,6 +74,6 @@ def stas_png(data):
              pctdistance=0.6)
     filename = uuid.uuid4()
     filename = str(filename)+'.jpg'
-    file_path = os.path.join(BASE_DIR, 'app','static', filename)
+    file_path = os.path.join(BASE_DIR, 'squirreltracker','static', filename)
     plt.savefig(file_path)
     return '/static/' + filename
