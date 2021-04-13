@@ -24,17 +24,17 @@ Export: is a command that can be used to export the data in a CSV format. Also, 
 python manage.py export_squirrel_data /path/to/file.csv
 ```
 
-# API
+1. API
 
-# Map     
+2. Map     
 
-# Sightings 
+3. Sightings 
 
-# Stats of squirrels
+4. Stats of squirrels
 
-# Add squirrels
+5. Add squirrels
 
-# Edit a specific squirrel
+6. Edit a specific squirrel
 
 # Dependencies used in this project
 - [Django](https://www.djangoproject.com)
