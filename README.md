@@ -24,17 +24,19 @@ Export: is a command that can be used to export the data in a CSV format. Also, 
 python manage.py export_squirrel_data /path/to/file.csv
 ```
 
-1. API
+# Map     
+[Map View](https://my-project1-254718.appspot.com/map/)shows a map that displays the location of the squirrel sightings on an OpenStreets map.   
+>Located at: /map   
+Method: GET   
+Use the [leaflet](https://leafletjs.com/) library for plotting   
 
-2. Map     
+# Sightings 
 
-3. Sightings 
+# Stats of squirrels
 
-4. Stats of squirrels
+# Add squirrels
 
-5. Add squirrels
-
-6. Edit a specific squirrel
+# Edit a specific squirrel
 
 # Dependencies used in this project
 - [Django](https://www.djangoproject.com)
