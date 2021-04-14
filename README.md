@@ -41,6 +41,15 @@ Use the [leaflet](https://leafletjs.com/) library for plotting
 	Method: GET & POST   
 
 # Add squirrels
+[Add squirrels](https://my-project1-254718.appspot.com/sightings/add/) is a view to create a new sighting   
+>Located at: /sightings/add   
+	Method: GET & POST   
+
+# Stats of squirrels
+[Stats View](https://my-project1-254718.appspot.com/sightings/37F-PM-1014-03/) is a view with general stats about the sightings
+Stats include five of the attributes listed in the initial CSV download.    
+>Located at: /sightings/stats   
+Method: GET 
 
 # Dependencies used in this project
 - [Django](https://www.djangoproject.com)
