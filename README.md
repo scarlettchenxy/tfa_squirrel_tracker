@@ -35,7 +35,7 @@ Use the [leaflet](https://leafletjs.com/) library for plotting
 >Located at: /sightings   
 	Method: GET  
 
-# Squirrel Update View   
+# Update View   
 [Update View](https://my-project1-254718.appspot.com/sightings/37F-PM-1014-03/) is a view to update a particular sighting.    
 >Located at: /sightings/<unique-squirrel-id>   
 	Method: GET & POST   
