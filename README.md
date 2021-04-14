@@ -63,7 +63,7 @@ The official description for this project is in [*Squirrel Tracker*](https://doc
 
 # Contributors
 
-Group Name: Project Group 39
+Group Name: Project Group 39 Section 001
 
 Contributors: Abhinaya Shankar, Yunan Shi, Xiaoyi Chen
 
