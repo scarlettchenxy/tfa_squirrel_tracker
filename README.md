@@ -36,6 +36,10 @@ Use the [leaflet](https://leafletjs.com/) library for plotting
 	Method: GET  
 
 # Stats of squirrels
+### Squirrel Update View   
+[Update View](https://project-261004.appspot.com/sightings/13E-AM-1017-05/) is a view to update a particular sighting.    
+>Located at: /sightings/<unique-squirrel-id>   
+	Method: GET & POST   
 
 # Add squirrels
 
