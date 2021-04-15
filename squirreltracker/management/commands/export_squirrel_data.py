@@ -4,7 +4,7 @@ from ...utils import write_export_data
 
 
 class Command(BaseCommand):
-    help = 'data import'
+    help =  'export squirrel data'
 
     def add_arguments(self, parser):
         parser.add_argument('filename', nargs='+', type=str)
