@@ -24,8 +24,6 @@ Export: is a command that can be used to export the data in a CSV format. Also, 
 python manage.py export_squirrel_data /path/to/file.csv
 ```
 
-# API
-
 # Map     
 Shows a map that displays the location of the squirrel sightings on an OpenStreets map.   
 >Located at: /map   
