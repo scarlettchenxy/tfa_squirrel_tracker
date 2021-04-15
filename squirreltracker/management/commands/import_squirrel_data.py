@@ -7,7 +7,7 @@ from project.settings import BASE_DIR
 
 
 class Command(BaseCommand):
-    help = 'import data to database'
+    help = 'import squirrel data to database'
 
     def add_arguments(self, parser):
         parser.add_argument('filename', nargs='+', type=str)
