@@ -1,5 +1,5 @@
 data.sqlite3
 *.pyc
 __pycache__/
-/venv/
 .idea
+/venv/
