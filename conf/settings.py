@@ -56,18 +56,29 @@ TEMPLATES = [
     },
 ]
 
+WSGI_APPLICATION = 'conf.wsgi.application'
+
+
+# Database
+# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+
+# Install PyMySQL as mysqlclient/MySQLdb to use Django's mysqlclient adapter
+# See https://docs.djangoproject.com/en/2.1/ref/databases/#mysql-db-api-drivers
+# for more information
+import pymysql  # noqa: 402
+pymysql.version_info = (1, 4, 6, 'final', 0)  # change mysqlclient version
+pymysql.install_as_MySQLdb()
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
 if os.getenv("GAE_APPLICATION", None):
     DATABASES = {
         'default': {
-            'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            'NAME': 'NAME',
-            'USER': 'USER',
-            'PASSWORD': 'PASS',
-            'HOST': '***',
-            'PORT': '3306',
+            'ENGINE': 'django.db.backends.mysql',
+            'HOST': '/cloudsql/[YOUR-CONNECTION-NAME]',
+            'USER': '[YOUR-USERNAME]',
+            'PASSWORD': '[YOUR-PASSWORD]',
+            'NAME': '[YOUR-DATABASE]',
         }
     }
 else:
