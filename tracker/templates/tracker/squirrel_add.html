@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<style>
+    .form-container {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80vw;
+    }
+    .form-group{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 20px;
+        flex-direction: column;
+    }
+    label{
+        font-weight: bold;
+    }
+</style>
+<div class="container">
+    <div class="row">
+
+        <div class="col-4">
+            <form class="" action="{% url 'tracker:add' %}"
+                  method="POST">{% csrf_token %}
+                <div class="form-container">
+                    <div class="form-group row">
+                        <label>Latitude</label>
+                        <input type="text" class="form-control" name="x" value="{{ sighting.x }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Longitude</label>
+                        <input type="text" class="form-control" name="y" value="{{ sighting.y }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Unique Squirrel ID</label>
+                        <input type="text" class="form-control" class="form-control" name="uniquesquirrelid" value="{{ sighting.uniquesquirrelid }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Shift</label>
+                        <input type="text" class="form-control" name="Shift" value="{{ sighting.shift }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>date</label>
+                        <input type="text" class="form-control" name="Date" value="{{ sighting.date }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Age</label>
+                        <input type="text" class="form-control" name="Age" value="{{ sighting.age }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Primary Fur Color</label>
+                        <input type="text" class="form-control" name="primaryfurcolor" value="{{ sighting.primaryfurcolor }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Location</label>
+                        <input type="text" class="form-control" name="location" value="{{ sighting.location }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Specific Location</label>
+                        <input type="text" class="form-control" name="specificlocation" value="{{ sighting.specificlocation }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Running</label>
+                        <input type="text" class="form-control" name="running" value="{{ sighting.running }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Chasing</label>
+                        <input type="text" class="form-control" name="chasing" value="{{ sighting.chasing }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Climbing</label>
+                        <input type="text" class="form-control" name="climbing" value="{{ sighting.climbing }}">
+                    </div>
+
+                    <div class="form-group row">
+                        <label>Foraging</label>
+                        <input type="text" class="form-control" name="foraging" value="{{ sighting.foraging }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Quaas</label>
+                        <input type="text" class="form-control"name="quaas" value="{{ sighting.quaas }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Kuks</label>
+                        <input type="text" class="form-control" name="kuks" value="{{ sighting.kuks }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Tail flags</label>
+                        <input type="text" class="form-control" name="tailflags" value="{{ sighting.tailflags }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Approaches</label>
+                        <input type="text" class="form-control" name="approaches" value="{{ sighting.approaches }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Indifferent</label>
+                        <input type="text" class="form-control" name="indifferent" value="{{ sighting.indifferent }}">
+                    </div>
+                    <div class="form-group row">
+                        <label>Runs from</label>
+                        <input type="text" class="form-control" name="runsfrom" value="{{ sighting.runsfrom }}">
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="height: 50% ;margin-top: 40px">submit</button>
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <div class="col-4">
+
+    </div>
+</div>
+
+{% endblock %}
